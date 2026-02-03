@@ -22,7 +22,7 @@ export default function Sidebar({ open, onClose }) {
     <aside className={`sidebar ${open ? 'sidebar--open' : ''}`}>
       {/* brand */}
       <div className="sidebar__brand">
-        <span>Inven<strong>Track</strong></span>
+        <span>Bubble<strong>Stack</strong></span>
       </div>
 
       {/* nav */}
