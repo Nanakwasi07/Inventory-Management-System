@@ -1,0 +1,50 @@
+/* ─── Reset ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Design Tokens ─── */
+:root {
+  --bg:            #0a0e27;
+  --surface:       #1a1f3a;
+  --surface-hover: #252d47;
+  --border:        #2d3854;
+
+  --text:          #f8fafc;
+  --text-muted:    #a0aec0;
+  --text-dim:      #718096;
+
+  --accent:        #3dd5f3;
+  --accent-dim:    rgba(61 213 243 / 0.12);
+  --success:       #48bb78;
+  --success-dim:   rgba(72 187 120 / 0.12);
+  --warning:       #ed8936;
+  --warning-dim:   rgba(237 137 54 / 0.12);
+  --danger:        #f56565;
+  --danger-dim:    rgba(245 101 101 / 0.12);
+
+  --radius:        8px;
+  --radius-lg:     12px;
+  --shadow:        0 10px 40px rgba(0 0 0 / 0.5);
+
+  --font:          'Sora', system-ui, sans-serif;
+}
+
+/* ─── Base ─── */
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ─── Thin scrollbar ─── */
+::-webkit-scrollbar            { width: 6px; }
+::-webkit-scrollbar-track      { background: transparent; }
+::-webkit-scrollbar-thumb      { background: var(--border); border-radius: 3px; }
